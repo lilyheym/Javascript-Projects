@@ -5,7 +5,7 @@ function Add_numbers_1() {
 }
 function Add_numbers_2() {
     var Y = 10;
-    document.write(12 + Y);   //debugged using devtools(console.log) and fixed
+    console.log(12 + Y);   //console.log to debugg
 }
 Add_numbers_1();
 Add_numbers_2();
