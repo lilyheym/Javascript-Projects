@@ -3,7 +3,7 @@ function getReceipt() {
     var text1 = "<h3>You Ordered:</h3>";
     var runningTotal = 0;
     var sizeTotal = 0;
-    var sizeArray = document.getElementsByClassName("Size");
+    var sizeArray = document.getElementsByClassName("size");
     for (var i = 0; i < sizeArray.length; i++) {
         if (sizeArray[i].checked) {
             var selectedSize = sizeArray[i].value;
@@ -23,13 +23,13 @@ function getReceipt() {
     }
     runningTotal = sizeTotal;
     console.log(selectedSize+" = $"+sizeTotal+".00");
-    console.log("size text1: $"+text1);
+    console.log("size text1: "+text1);
     console.log("subtotal: $"+runningTotal+".00");
     //These variables will get passed onto each function
     getTopping(runningTotal, text1);
 };
 
-function getTopping(runningTotal, text1) {
+function getTopping(runningTotal,text1) {
     var toppingTotal = 0;
     var selectedTopping = [];
     var toppingArray = document.getElementsByClassName("toppings");
