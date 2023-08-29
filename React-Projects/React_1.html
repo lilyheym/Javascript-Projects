@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="react.js" defer></script>
-        <script src="react-dom.js" defer></script>
+        <script src="react.js"></script>
+        <script src="react-dom.js"></script>
     </head>
     <body>
         <div id="My_React_Code"></div>
@@ -11,9 +11,9 @@
                 render: function() {
                     var time_Passed = Math.round(this.props.time_Passed / 100);
                     var seconds_Passed = time_Passed / 10 + (time_Passed % 10 ? '' : '.0' );
-                    var text = 'My React vode started running '+
+                    var text = 'My React code started running '+
                         seconds_Passed + ' seconds ago!';
-                    return React.Dom.p(null, text);
+                    return React.DOM.p(null, text);
                 }
 
             });
@@ -28,5 +28,9 @@
                 );
             }, 50);
         </script>
+
+
+        <br>
+        <p style="font-size: 2vw;">Changing size with window</p>
     </body>
 </html>           
